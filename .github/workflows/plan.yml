@@ -7,9 +7,6 @@ on:
   issue_comment:
     types: [created]
     if: contains(github.event.comment.body, 'digger')
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
